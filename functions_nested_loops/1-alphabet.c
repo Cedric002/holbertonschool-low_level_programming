@@ -7,12 +7,12 @@
  *
  * Return: Always 0 (Success)
  */
-int main(void)
+void print_alphabet(void)
 {
-	char c;
+	char lettre;
 
-	for (c = 'a'; c <= 'z'; c++)
-		putchar(c);
+	for (lettre = 'a'; lettre <= 'z'; lettre++)
+		putchar(lettre);
 
 	putchar('\n');
 
