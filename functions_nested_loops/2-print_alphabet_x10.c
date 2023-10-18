@@ -11,11 +11,14 @@ void print_alphabet_x10(void)
 {
 	char lettre;
 
-	for (lettre = 0; lettre < 10; lettre++) {
-        	for (lettre = 'a'; lettre <= 'z'; lettre++) {
-                	putchar(lettre);
+	for (lettre = 0; lettre <= 10; lettre++) 
+	{
+
+		for (lettre = 'a'; lettre <= 'z'; lettre++) 
+		{
+			putchar(lettre);
 		}
 
-        	putchar('\n');
+		putchar('\n');
 	}
 }
