@@ -4,12 +4,12 @@
 
 /**
  * int _islower(int c) - Entry point
- * @int c
+ * @int c: entry point
  * Return: si characteres en minuscule afficher 1 sinon 0
  */
 int _islower(int c)
 {
-	if ( _islower(c) )
+	if (_islower(c))
 	{
 		return (1);
 	}
