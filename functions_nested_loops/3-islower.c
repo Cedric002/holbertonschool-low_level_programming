@@ -9,9 +9,9 @@
  */
 int _islower(int c)
 {
-	scanf("%s", &c);
+	scanf("%lc", &c);
 	
-	if (islower(c))
+	if ( islower(c) )
 	{
 		return (1);
 	}
