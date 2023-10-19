@@ -9,8 +9,6 @@
  */
 int _islower(int c)
 {
-	scanf("%lc", &c);
-	
 	if ( islower(c) )
 	{
 		return (1);
