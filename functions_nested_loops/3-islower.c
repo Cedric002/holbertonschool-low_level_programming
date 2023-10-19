@@ -7,7 +7,7 @@
  * @int c
  * Return: si characteres en minuscule afficher 1 sinon 0
  */
-int _islower(int c);
+int _islower(int c)
 {
 	scanf("%c", &c);
 	
