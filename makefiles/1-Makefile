@@ -6,3 +6,6 @@ all : $(EXEC)
 
 $(EXEC) : main.c school.c
 	$(CC) -o $(EXEC) main.c school.c
+
+%.o : %.c
+	$(CC) -o -c $(SRC)
