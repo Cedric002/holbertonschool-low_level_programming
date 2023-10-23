@@ -5,11 +5,11 @@
 
 /**
  * reset_to_98 - entry
- * @*n: value
+ * @n: value
  *
  * Return: 98
  */
-void reset_to_98(int *n);
+void reset_to_98(int *n)
 {
 	*n = 98;
 }
