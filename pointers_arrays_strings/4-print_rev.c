@@ -2,7 +2,6 @@
 #include <stdlib.h>
 #include <time.h>
 #include "main.h"
-#include <string.h>
 
 /**
  * print_rev - entry
