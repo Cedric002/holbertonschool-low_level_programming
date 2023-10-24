@@ -12,7 +12,5 @@
 void print_rev(char *s)
 {
 	scanf("%s", s);
-
-	strrev(s);
-	return (0);
+	print_rev(s);
 }
