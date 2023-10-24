@@ -11,7 +11,8 @@
  */
 void _puts(char *str)
 {
-	str = "I do not fear computers. I fear the lack of them - Isaac Asimov";
-	puts("\n");
-	puts(str);
+	while (*str)
+	putchar(*str++);
+
+	putchar('\n');
 }
