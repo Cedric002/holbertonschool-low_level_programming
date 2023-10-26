@@ -12,8 +12,20 @@
  */
 char *_strcat(char *dest, char *src)
 {
-	*dest[98] = "Hello ";
-	*src[] = "World!";
-	_strcat(dest, src);
-	return (dest);
+	int debu;
+	int fin;
+	debu = 0;
+
+	while (dest[debu] != '\0')
+	{
+		debu++;
+	}
+	fin = 0;
+
+	while (src[fin] != '\0')
+	{
+		dest[debu] = src[fin];
+		debu++;
+		fin++;
+	}
 }
