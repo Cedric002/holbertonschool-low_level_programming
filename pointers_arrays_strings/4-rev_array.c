@@ -12,15 +12,16 @@
  */
 void reverse_array(int *a, int n)
 {
-	int rev_arr[n];
+	int i;
+	int tab[n];
 
-	for (int i = 0; i < n; i++)
+	for (i = 0; i < n; i++)
 	{
-		rev_arr[i] = a[n - i - 1];
+		tab[n - 1 - i] = a[i];
 	}
 
-	for (int i = 0; i < n; i++)
+	for (i = 0; i < n; i++)
 	{
-		a[i] = rev_arr[i];
+		a[i] = tab[i];
 	}
 }
