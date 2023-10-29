@@ -13,9 +13,10 @@
  */
 char *_memcpy(char *dest, char *src, unsigned int n)
 {
-	char *csrc = (char *)src;
-	char *cdest = (char *)dest;
+	if (dest == NULL || src == NULL)
+	{
+		return (0);
+	}
 
-	for (int i = 0; i < n; i++)
-		cdest[i] = csrc[i];
+		_memcpy(dest, src, n);
 }
