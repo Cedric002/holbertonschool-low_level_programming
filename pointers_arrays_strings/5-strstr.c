@@ -4,7 +4,7 @@
 #include "main.h"
 
 /**
- * _strchr - localise un caractere
+ * _strstr - localise une sous-chaine
  * @haystack: string
  * @needle: sous-chaine
  *
