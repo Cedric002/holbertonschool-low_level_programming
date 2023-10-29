@@ -9,14 +9,20 @@
  * @src: zone memoire 2
  * @n: 1ers octets
  *
- * Return: reverse array
+ * Return: 0
  */
 char *_memcpy(char *dest, char *src, unsigned int n)
 {
-	if (dest == NULL || src == NULL)
-	{
-		return (0);
-	}
+	char *pszDest = (char *)dest;
+	const char *pszSource = (const char *)src;
 
-		_memcpy(dest, src, n);
+	if ((pszDest != NULL) && (pszSource != NULL))
+	{
+		while (n)
+		{
+			*(pszDest++) = *(pszSource++);
+			--n;
+		}
+	}
+	return (dest);
 }
