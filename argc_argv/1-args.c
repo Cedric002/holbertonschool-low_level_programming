@@ -9,14 +9,10 @@
  *
  * Return: nb argument
  */
-int main(int argc, char *argv[] __attribute__((unused)))
+int main(int argc __attribute__((unused)), char *argv[])
 {
-	int i;
+	printf("\n");
 
-	for (i = 1; i < argc; i++)
-	{
-		printf("\n%s", argv[i]);
-	}
 	printf(" %d", argc - 1);
 
 	return (0);
