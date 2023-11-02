@@ -7,14 +7,15 @@
  * @argc: argument
  * @argv: tableau
  *
- * Return: mynameis
+ * Return: nb argument
  */
 int main(int argc __attribute__((unused)), char *argv[])
 {
-	int nbarg;
-	for (nbarg = 0; nbarg < argc; nbarg++)
+	int i;
 
-		printf("argv[%2d]: %s\n", nbarg, argv[nbarg]);
-
-	return (0);
+	for (i = 0; i < argc; i++)
+	{
+		printf("%s ", argv[i]);
+	}
+	printf("\n");
 }
