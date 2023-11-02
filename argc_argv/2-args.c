@@ -11,9 +11,10 @@
  */
 int main(int argc, char *argv[] __attribute__((unused)))
 {
-	printf("%d", argc + 1);
+	int i = 0;
 
-	printf("\n");
+	for (i = 0; i < argc; i++)
+	printf("\n%s", argv[i]);
 
 	return (0);
 }
