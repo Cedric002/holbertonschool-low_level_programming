@@ -11,7 +11,9 @@
  */
 int main(int argc, char *argv[] __attribute__((unused)))
 {
-	for (int i = 1; i < argc; i++)
+	int i;
+
+	for (i = 1; i < argc; i++)
 	{
 		printf("%d: [%s]\n", i, argv[i]);
 	}
