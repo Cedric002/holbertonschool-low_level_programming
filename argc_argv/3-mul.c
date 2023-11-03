@@ -7,25 +7,24 @@
  * @argc: argument
  * @argv: tableau
  *
- * Return: nb argument
+ * Return: multiplication
  */
 int main(int argc, char *argv[])
 {
-	int i,
-	mul = 0;
+	int nb1;
+	int nb2;
+	int mul;
 
 	if (argc != 3)
 	{
 		printf("error\n");
-
 		return (1);
 	}
 
-	for (i = 1; i < argc; i++)
-
-		mul = atoi(argv[i]) * atoi(argv[i]);
+	nb1 = atoi(argv[1]);
+	nb2 = atoi(argv[2]);
+	mul = nb1 * nb2;
 
 	printf("%d\n", mul);
-
 	return (0);
 }
