@@ -14,7 +14,7 @@ int main(int argc, char *argv[])
 	int i,
 	mul = 0;
 
-	if (argc != 3)
+	if (argc != 2)
 	{
 		printf("error\n");
 
