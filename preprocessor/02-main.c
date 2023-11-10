@@ -1,0 +1,13 @@
+#include "1-pi.h"
+#include <stdio.h>
+
+/**
+ * main - check the code
+ *
+ * Return: Always 0.
+ */
+int main(void)
+{
+	printf("This program was compiled from the file: %s\n", __FILE__);
+	return (0);
+}
