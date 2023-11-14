@@ -4,7 +4,7 @@
 #include "dog.h"
 /**
  * init_dog - entry
- * @d: chien
+ * @d: proprietaire
  * @name: nom
  * @age: age
  * @owner: 2nd nom

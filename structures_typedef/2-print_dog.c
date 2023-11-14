@@ -4,7 +4,7 @@
 #include "dog.h"
 /**
  * print_dog - entry
- * @d: chien
+ * @d: proprietaire
  *
  * Return: 0
  */
