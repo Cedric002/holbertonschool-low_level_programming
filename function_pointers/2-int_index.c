@@ -4,14 +4,27 @@
 #include "function_pointers.h"
 
 /**
- * array_iterator - fonction en paametre sur chaque elements tableau
+ * int_index - index du 1er element
  * @array: tableau
  * @size: taille
- * @action: pointeur de fonction
+ * @cmp: pointeur
  *
  * Return: name
  */
 int int_index(int *array, int size, int (*cmp)(int))
 {
+	if (cmp != 0)
+	{
+		cmp -> element
+	}
 
+	if (cmp != element)
+	{
+		return (-1);
+	}
+
+	if (size <= 0)
+	{
+		return (-1);
+	}
 }
