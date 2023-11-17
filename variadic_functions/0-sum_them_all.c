@@ -5,7 +5,7 @@
 #include "variadic_functions.h"
 
 /**
- * print_numbers - entry
+ * sum_them_all - entry
  * @n: nombre
  *
  * Return: 0
