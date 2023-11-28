@@ -1,49 +1,35 @@
 #include "lists.h"
 
 /**
- * strdup - function with one argument
- * @str: string argument
+ * _strlen - longueur string
+ * @str: string
  *
- * Return: pointer
+ * Return: strlen
  */
-
-char *strdup(const char *str)
+unsigned int _strlen(const char *str)
 {
-	char *dup = malloc(strlen(str) + 1);
+	unsigned int length = 0;
 
-	if (dup == NULL)
-	{
+	while (str[length])
+		length++;
 
-		return (NULL);
-	}
-
-	char *p;
-
-	p = dup;
-
-	while (*str)
-	{
-		*p++ = *str++;
-		*p = '\0';
-	}
-
-	return (dup);
+	return (length);
 }
 
 /**
- * add_node - Retourne le nombre d'elements d'une liste
- * @head: Tete de la liste
+ * add_node - Ajouter new node
+ * @head: en-tete de la liste
  * @str: string
  *
- * Return: Numbre d'elements dans une liste
- *
+ * Return: new node
  */
 list_t *add_node(list_t **head, const char *str)
 {
-	list_t *new_node;
+	list_t *tmp_node;
 
-	new_node = *head;
+	tmp_node = *head;
 	*head = malloc(sizeof(list_t));
+
 	if (*head)
 	{
 		if (str)
@@ -56,7 +42,7 @@ list_t *add_node(list_t **head, const char *str)
 			(*head)->len = 0;
 			(*head)->str = "(nil)";
 		}
-		(*head)->next = new_node;
+		(*head)->next = tmp_node;
 	}
 	return (*head);
 }
