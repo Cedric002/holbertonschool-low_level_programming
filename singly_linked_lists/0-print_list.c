@@ -7,7 +7,7 @@
  * print_list - Afficher elements d'une liste
  * @h: l'en-tete de la liste
  *
- * Return: Number of elements in linked list
+ * Return: Elements dans une liste
  *
  */
 size_t print_list(const list_t *h)
