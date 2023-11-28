@@ -1,35 +1,19 @@
 #include "lists.h"
 
 /**
- * _strlen - longueur string
+ * add_node - Retourne le nombre d'elements d'une liste
+ * @head: Tete de la liste
  * @str: string
  *
- * Return: strlen
- */
-unsigned int _strlen(const char *str)
-{
-	unsigned int length = 0;
-
-	while (str[length])
-		length++;
-
-	return (length);
-}
-
-/**
- * add_node - Ajouter new node
- * @head: en-tete de la liste
- * @str: string
+ * Return: Numbre d'elements dans une liste
  *
- * Return: new node
  */
 list_t *add_node(list_t **head, const char *str)
 {
-	list_t *tmp_node;
+	list_t *new_node;
 
-	tmp_node = *head;
+	new_node = *head;
 	*head = malloc(sizeof(list_t));
-
 	if (*head)
 	{
 		if (str)
@@ -42,7 +26,7 @@ list_t *add_node(list_t **head, const char *str)
 			(*head)->len = 0;
 			(*head)->str = "(nil)";
 		}
-		(*head)->next = tmp_node;
+		(*head)->next = new_node;
 	}
 	return (*head);
 }
