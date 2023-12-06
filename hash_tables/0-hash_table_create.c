@@ -17,9 +17,7 @@ hash_table_t *hash_table_create(unsigned long size)
 
 	table->size = size;
 
-	table->items = (void **)calloc(size, sizeof(void *));
-
-	if (table->items == NULL)
+	if (table->array == NULL)
 	{
 		free(table);
 		return (NULL);
