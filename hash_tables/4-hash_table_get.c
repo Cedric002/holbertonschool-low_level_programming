@@ -11,30 +11,25 @@
 
 char *hash_table_get(const hash_table_t *ht, const char *key)
 {
+	hash_node_t *key_node;
 	unsigned long int index;
-	hash_node_t **array, *temp;
 
-	index = key_index((const unsigned char *)key, ht->size);
-
-	array = ht->array;
-
-	if (!ht)
-
-		return (NULL);
-
-	if (!key || key[0] == '\0')
-
-		return (NULL);
-
-	temp = array[index];
-
-	while (temp)
+	if (ht && key)
 	{
-		if (strcmp(key, temp->key) == 0)
+		index = key_index((const unsigned char *)key, ht->size);
 
-			return (temp->value);
+		if (ht->array[index])
+		{
+			key_node = ht->array[index];
 
-		temp = temp->next;
+			while (key_node)
+			{
+				if (strcmp(key_node->key, (char *)key) == 0)
+					return (key_node->value);
+
+				key_node = key_node->next;
+			}
+		}
 	}
 	return (NULL);
 }
