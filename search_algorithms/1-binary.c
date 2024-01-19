@@ -12,6 +12,7 @@
 int binary_search(int *array, size_t size, int value)
 {
 	int small;
+	int middle;
 	int big;
 
 	if (array == NULL)
@@ -24,7 +25,7 @@ int binary_search(int *array, size_t size, int value)
 
 	while (small <= big)
 	{
-		int middle = small + (big - small) / 2;
+		middle = small + (big - small) / 2;
 
 		if (value == array[middle])
 		{
